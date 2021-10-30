@@ -1,6 +1,5 @@
 package software.plusminus.softdelete.interceptor;
 
-import company.plusminus.test.TestUtils;
 import org.hamcrest.core.Is;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,6 +12,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.transaction.annotation.Transactional;
+import software.plusminus.check.util.JsonUtils;
 import software.plusminus.softdelete.TestEntity;
 
 import java.util.stream.Stream;
@@ -72,7 +72,7 @@ public class SoftDeleteFilterIntegrationTest {
     }
 
     private TestEntity readTestEntity() {
-        return TestUtils.fromJson("/json/test-entity.json", TestEntity.class);
+        return JsonUtils.fromJson("/json/test-entity.json", TestEntity.class);
     }
 
 }

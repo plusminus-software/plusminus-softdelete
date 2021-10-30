@@ -57,7 +57,7 @@
         </dependency>
         <!-- Test -->
         <dependency>
-            <groupId>company.plusminus</groupId>
+            <groupId>software.plusminus</groupId>
             <artifactId>plusminus-test</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>test</scope>
